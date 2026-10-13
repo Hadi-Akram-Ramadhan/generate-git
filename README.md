@@ -27,8 +27,7 @@
 
 - **Otomatis & Cepat**: Script teroptimasi dengan pacing API yang aman dari rate-limit GitHub.
 - **Realistic Commits**: Generate PR dengan commit message conventional, code TypeScript/React realistis, dan struktur folder production-ready.
-- **Multi-Achievement Support**: Unlock Pull Shark, Galaxy Brain, Pair Extraordinaire, Quickdraw, dan YOLO dalam satu repository.
-- **Co-Authorship Integration**: Support penuh untuk co-authored commits dengan akun kolaborator.
+- **Multi-Achievement Support**: Unlock Pull Shark, Galaxy Brain, Quickdraw, dan YOLO dalam satu repository.
 - **Clean & Modular**: Setiap achievement punya script terpisah dengan docstring jelas.
 
 ---
@@ -39,7 +38,6 @@
 |-------|------|---------------|--------|-----------|
 | 🦈 | **Pull Shark** | Gold (x4) | `unlock_pull_pair_gold.py` | Unlock dengan 1,024 merged PRs |
 | 🧠 | **Galaxy Brain** | Gold (x4) | `unlock_galaxy_brain.py` | Unlock dengan 32 accepted Q&A answers |
-| 👥 | **Pair Extraordinaire** | Gold (x4) | `unlock_pull_pair_gold.py` | Unlock dengan 48+ co-authored PRs |
 | 🤠 | **Quickdraw** | Base | Manual (close issue <5 min) | Close issue dalam 5 menit |
 | 🎲 | **YOLO** | Base | Manual (merge PR tanpa review) | Merge PR tanpa code review |
 
@@ -149,12 +147,12 @@ CO_AUTHOR_EMAIL = "330958267+hadooyy90-afkrere@users.noreply.github.com"
 
 ## 🚀 Cara Penggunaan
 
-### Script 1: Pull Shark Gold + Pair Extraordinaire Gold
+### Script 1: Pull Shark Gold
 
-Generate 500+ realistic Next.js/React PRs dengan co-author yang valid.
+Generate 500+ realistic Next.js/React PRs dengan struktur production-ready.
 
 ```bash
-cd C:\laragon\www\sibermu-haf
+cd C:\laragon\www\YOUR_REPO
 python unlock_pull_pair_gold.py
 ```
 
@@ -162,7 +160,6 @@ python unlock_pull_pair_gold.py
 
 **Output:**
 - ✅ 500+ merged PRs dengan commit message conventional (`feat(ui):`, `perf(gsap):`, dll)
-- ✅ Co-authored commits di setiap PR (untuk Pair Extraordinaire)
 - ✅ File tersebar di `components/`, `lib/`, `types/`, `app/` (production-realistic)
 
 ---
@@ -188,27 +185,14 @@ python unlock_galaxy_brain.py
 
 ---
 
-### Script 3: Heart On Your Sleeve + Pair Extraordinaire (Legacy)
-
-Script lama untuk unlock achievements tambahan via emoji reactions.
-
-```bash
-python unlock_pair_and_heart.py
-```
-
-**Note:** Heart On Your Sleeve adalah badge yang sudah **tidak aktif** (retired oleh GitHub). Script ini sekarang hanya digunakan untuk testing co-author format.
-
----
-
 ## 📂 Struktur Script
 
 ```
 generate-git/
 │
 ├── README.md                      # Dokumentasi lengkap (file ini)
-├── unlock_pull_pair_gold.py       # Pull Shark + Pair Extraordinaire Gold
+├── unlock_pull_pair_gold.py       # Pull Shark Gold
 ├── unlock_galaxy_brain.py         # Galaxy Brain Gold via Discussions
-├── unlock_pair_and_heart.py       # Legacy: Heart On Your Sleeve
 ├── run_clean.py                   # Helper: Sequential PR runner (opsional)
 │
 └── .gitignore                     # Ignore tokens dan cache
